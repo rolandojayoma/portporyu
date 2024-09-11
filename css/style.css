@@ -1,0 +1,200 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C; /* Dark gray background */
+    color: #F5F5F5; /* Light text for contrast */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h5, .skill-item {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF; /* Bright white headings */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #2C2C2C; /* Slightly lighter section background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar */
+nav {
+    background-color: #131313; /* Darker navbar */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #F5F5F5; /* Light text for the navbar links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #333333; /* Slightly lighter hover effect */
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #FFFFFF; /* Bright white text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+}
+
+.hero p.intro {
+    font-size: 1.2rem;
+    color: #E0E0E0; /* Lighter gray for intro text */
+}
+
+/* Carousel */
+.carousel-container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 300%;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #2E2E2E; /* Darker block for skills */
+    color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    border: 1px solid #fff;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #2E2E2E; /* Same dark color for project boxes */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.project:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project a {
+    color: #F5F5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Contact Section */
+#contact a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #E0E0E0; /* Slightly lighter on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+}

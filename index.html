@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><a onclick="scrollToSection('home')">Home</a></li>
+        <li><a onclick="scrollToSection('about')">About Me</a></li>
+        <li><a onclick="scrollToSection('skills')">Skills</a></li>
+        <li><a onclick="scrollToSection('projects')">Projects</a></li> 
+        <li><a onclick="scrollToSection('contact')">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main content -->
+<div id="home" class="container">
+    <section class="hero">
+        <h1>Welcome to My Personal Website</h1>
+        <p class="intro">Discover my passion for design, technology, and creativity.</p>
+    </section>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="images/1 (1).jpg" alt="Carousel Image 1"> 
+                </div>
+                <div class="carousel-item">
+                    <img src="images/1 (2).jpg" alt="Carousel Image 2"> 
+                </div>
+                <div class="carousel-item">
+                    <img src="images/1 (3).jpg" alt="Carousel Image 3"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hello! My name is Rolando Jayoma, and I am 20 years old, living in Tibungco, Davao. I have a passion for creativity and technology. Here's a bit about me:</p>
+
+        <p>I have always been fascinated by the world of design, both digital and physical. Creating visually appealing graphics and layouts brings me immense joy and satisfaction. In addition to designing, I enjoy video and photo editing, where I can exercise my creativity and attention to detail.</p>
+        <p>When it comes to troubleshooting, I thrive on the challenge of solving complex problems. Whether it's debugging code, fixing hardware issues, or optimizing processes, I approach each problem with a systematic and analytical mindset. I am always eager to take on new challenges and expand my knowledge in the ever-evolving fields of design and technology.</p>
+        
+        <h2>Education</h2>
+        <ul>
+            <li>2016 - F. Bustamante Central Elementary School</li>
+            <li>2022 - F. Bustamante National High School</li>
+            <li>2024~ - Jose Maria College</li>
+        </ul>
+        
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Programming</div>
+            <div class="skill-item">Basic Troubleshooting</div>
+            <div class="skill-item">Basic Networking</div>
+            <div class="skill-item">Editing</div>
+            <div class="skill-item">Website Designing</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div id="projects-container" class="projects-grid"></div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out to me at:</p>
+        <p>Email: <a href="mailto:rolando.jayomajr@jmc.edu.ph">rolando.jayomajr@jmc.edu.ph</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/rolando.jayoma" target="_blank">Rolando Campos Jayoma</a></p>
+        <p>Phone: 09915669935</p>
+    </section>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
